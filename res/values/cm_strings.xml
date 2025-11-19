@@ -433,4 +433,8 @@
     <string name="gs_duplicate_key">Each field can only be set once</string>
     <string name="gs_save">Save</string>
     <string name="gs_footer_body">The selected game sees the chosen device identity in its Build fields. Games are restarted when their configuration changes. Some games use this to unlock higher frame rates or graphics settings.</string>
+
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca_title">Carrier aggregation</string>
+    <string name="force_lte_ca_summary">Enhances LTE bandwidth by aggregating supported bands</string>
 </resources>
