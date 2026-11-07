@@ -6310,6 +6310,20 @@
             </intent-filter>
         </service>
 
+        <receiver
+            android:name="com.android.settings.lineage.spoofing.KeyboxMonitorReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.android.settings.action.KEYBOX_EXPIRY_DUE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.android.settings.lineage.spoofing.KeyboxCheckJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
 
     </application>
